@@ -160,7 +160,7 @@ INSERT INTO achievements (name, description, icon, type, condition_type, conditi
 ('活动组织者', '发起3次观鸟活动', '[号]', 'activity', 'organized_activities', 3);
 
 INSERT INTO users (username, email, password, nickname, bio) VALUES
-('demo', 'demo@example.com', '$2a$10$N9qo8uLOickgx2ZMRZoMyeIjZAgcfl7p92ldGxad68LJZdL17lhWy', '演示用户', '这是一个演示账户，密码为 demo123');
+('demo', 'demo@example.com', '$2a$10$5qtzdQ3J85ypCH7LLDaZVOY2y240y1LoY54.l86srq/P7T9.7iXfK', '演示用户', '这是一个演示账户，密码为 demo123');
 
 INSERT INTO bird_species (chinese_name, latin_name, english_name, bird_order, family, genus, features, distribution, habitat, conservation_status, image_url) VALUES
 ('麻雀', 'Passer montanus', 'Eurasian Tree Sparrow', '雀形目', '雀科', '麻雀属', '体型小巧，体长约14厘米。头顶和后颈栗褐色，背部褐色带黑色纵纹，脸颊有黑斑。', '中国各地广泛分布', '城镇、村落、农田等人类活动区域', '无危', 'https://example.com/sparrow.jpg'),
