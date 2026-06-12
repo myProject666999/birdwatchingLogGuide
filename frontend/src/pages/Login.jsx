@@ -51,21 +51,19 @@ export default function Login() {
               key: 'login',
               label: '登录',
               children: (
-                <Form layout="vertical" onFinish={handleLogin}>
+                <Form layout="vertical" onFinish={handleLogin} initialValues={{ username: 'demo', password: 'demo123' }}>
                   <Form.Item name="username" rules={[{ required: true, message: '请输入用户名' }]}>
                     <Input
                       size="large"
                       prefix={<UserOutlined />}
-                      placeholder="用户名 / 邮箱"
-                      defaultValue="demo"
+                      placeholder="请输入用户名"
                     />
                   </Form.Item>
                   <Form.Item name="password" rules={[{ required: true, message: '请输入密码' }]}>
                     <Input.Password
                       size="large"
                       prefix={<LockOutlined />}
-                      placeholder="密码"
-                      defaultValue="demo123"
+                      placeholder="请输入密码"
                     />
                   </Form.Item>
                   <Form.Item>
